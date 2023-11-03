@@ -286,9 +286,40 @@
 <p>5)优先级：低于关系运算符和算术运算符,所以 4）第二种写法的所有括号都可以省略</p>
 <p>6)结合方向：自右至左 </p>
 <h4 id="2-4选择结构的嵌套"><a href="#2-4选择结构的嵌套" class="headerlink" title="2.4选择结构的嵌套"></a>2.4选择结构的嵌套</h4><p>例：</p>
-<p><code>#include&lt;stdio.h&gt; int main() &#123;     int year, x;     printf(&quot;输入年份：&quot;);     scanf(&quot;%d&quot;, &amp;year);     if (year % 4 == 0 &amp;&amp; year % 100 != 0)         x = 1;     else if (year % 400 == 0)         x = 1;     else x = 0;     printf(&quot;%d&quot;, x);     return 0; &#125;</code></p>
+<p><code>#include&lt;stdio.h&gt;</code></p>
+<p><code> int main()</code></p>
+<p><code> &#123;</code></p>
+<p><code>     int year, x;</code></p>
+<p><code>     printf(&quot;输入年份：&quot;);</code></p>
+<p><code>     scanf(&quot;%d&quot;, &amp;year);</code></p>
+<p><code>     if (year % 4 == 0 &amp;&amp; year % 100 != 0)</code></p>
+<p><code>         x = 1;</code></p>
+<p><code>     else if (year % 400 == 0)</code></p>
+<p><code>         x = 1;</code></p>
+<p><code>     else x = 0;</code></p>
+<p><code>     printf(&quot;%d&quot;, x);</code></p>
+<p><code>     return 0;</code></p>
+<p><code> &#125;</code></p>
 <h4 id="2-5-switch分支选择"><a href="#2-5-switch分支选择" class="headerlink" title="2.5 switch分支选择"></a>2.5 switch分支选择</h4><p>例：</p>
-<p><code>#define _CRT_SECURE_NO_WARNINGS #include&lt;stdio.h&gt; int main() &#123;     int x=0, a=x/10;     char A, B, C, D, E;     scanf(&quot;%d,%d,%c,%c,%c,%c,%c&quot;, &amp;x,&amp;a,&amp;A,&amp;B,&amp;C,&amp;D,&amp;E);     a = x / 10;     switch (a)	     &#123;     case 0:case 1:case 2:case 3:case 4:case 5:printf(&quot;E&quot;); break;     case 6:printf(&quot;D&quot;); break;     case 7:printf(&quot;C&quot;); break;     case 8:printf(&quot;B&quot;); break;     case 9:case 10:printf(&quot;A&quot;); break;     default:printf(&quot;Input error!&quot;);     &#125;     return 0; &#125;</code></p>
+<p><code>#define _CRT_SECURE_NO_WARNINGS</code></p>
+<p><code> #include&lt;stdio.h&gt;</code></p>
+<p><code> int main()</code></p>
+<p><code> &#123;</code></p>
+<p><code>     int x=0, a=x/10;</code></p>
+<p><code>     char A, B, C, D, E;</code></p>
+<p><code>     scanf(&quot;%d,%d,%c,%c,%c,%c,%c&quot;, &amp;x,&amp;a,&amp;A,&amp;B,&amp;C,&amp;D,&amp;E);</code></p>
+<p><code>     a = x / 10;</code></p>
+<p><code>     switch (a)	</code></p>
+<p><code>     &#123;</code></p>
+<p><code>     case 0:case 1:case 2:case 3:case 4:case 5:printf(&quot;E&quot;); break;</code></p>
+<p><code>     case 6:printf(&quot;D&quot;); break;</code></p>
+<p><code>     case 7:printf(&quot;C&quot;); break;</code></p>
+<p><code>     case 8:printf(&quot;B&quot;); break;</code></p>
+<p><code>     case 9:case 10:printf(&quot;A&quot;); break;</code></p>
+<p><code>     default:printf(&quot;Input error!&quot;);</code></p>
+<p><code>     &#125;</code></p>
+<p><code>     return 0;</code></p>
+<p><code> &#125;</code></p>
 <p>（break：跳出当前的结构）</p>
 
       
